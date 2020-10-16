@@ -11,7 +11,7 @@ label {
     padding: 10px 0;
 }
 
-/* Parts of Page ----------------------- */
+/* Page Sections ----------------------- */
 
 header {
     background-color: darkgreen;
@@ -104,11 +104,6 @@ input[id="zip"] {
     max-width: 160px;
 }
 
-.choice-title {
-    font-weight: 300;
-    margin-bottom: 16px;
-    margin-top: 16px;
-}
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -117,6 +112,12 @@ input[type="radio"] {
 
 .choice-group {
     margin-bottom: 24px;
+}
+
+.choice-title {
+    font-weight: 300;
+    margin-bottom: 16px;
+    margin-top: 16px;
 }
 
 button {
@@ -143,12 +144,9 @@ button {
 
 input[type="text"],
  input[type="tel"],
- input[type="email"] {
+ input[type="email"],
+ select {
     min-width: 560px;
-}
-
-select {
-    min-width: 564px;
 }
 
 .banner,
