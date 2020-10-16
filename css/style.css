@@ -1,0 +1,162 @@
+/* Base Elements ----------------------- */
+
+body {
+    font-family: 'Merriweather', serif;
+}
+
+p,
+label {
+    color: grey;
+    font-weight: 300;
+    padding: 10px 0;
+}
+
+/* Parts of Page ----------------------- */
+
+header {
+    background-color: darkgreen;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: .8em;
+    text-align: center;
+}
+
+.banner {
+    border-bottom: solid 6px black;
+    text-align: center;
+    margin: 20px 10px 4px 10px;
+    padding: 10px 0;
+}
+
+footer {
+    font-style: italic;
+    color: gray;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.banner,
+.main-form,
+footer {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+/* Form Styling ----------------------- */
+
+.form-section {
+    border-top: solid 3px black;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    padding: 10px 0;
+}
+
+.form-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.form-item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+}
+
+textarea,
+input,
+select {
+    background-color: #e6e6e6;
+    border: 0;
+    border-radius: 4px;
+    padding: 12px 0;
+    color: gray;
+    font-weight: 300;
+}
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #edffed;
+    transition: background-color 2000ms linear
+}
+
+input::placeholder {
+    color: grey;
+    font-weight: 300;
+    font-size: .8em;
+    text-align: right;
+    font-style: italic;
+}
+
+input[id="zip"] {
+    max-width: 160px;
+}
+
+.choice-title {
+    font-weight: 300;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin: 0 12px 0 4px;
+}
+
+.choice-group {
+    margin-bottom: 24px;
+}
+
+button {
+    background-color: #009700;
+    color: white;
+    border: 0;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 1.2em;
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* Media Queries ----------------------- */
+
+@media (min-width:768px) {
+
+ /* Align input field and its label horizontally */
+ .form-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+input[type="text"],
+ input[type="tel"],
+ input[type="email"] {
+    min-width: 560px;
+}
+
+select {
+    min-width: 564px;
+}
+
+.banner,
+.main-form,
+footer {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+}
