@@ -139,14 +139,22 @@ button {
  .form-item {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 input[type="text"],
  input[type="tel"],
  input[type="email"],
  select {
-    min-width: 560px;
+    min-width: 80%;
+}
+
+input[id="zip"] {
+    min-width: 0;
+    max-width: 200px;
+}
+
+.form-item label {
+    min-width: 20%;
 }
 
 .banner,
